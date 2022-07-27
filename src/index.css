@@ -2,4 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+    .header-container {
+    @apply h-[8.5rem] bg-black flex flex-col justify-end md:h-[9.25rem] duration-200 fixed w-full
+    }
+    .image-container {
+    @apply h-10 cursor-pointer 
+    }
+    .mobile-logo {
+    @apply h-10 top-9 absolute left-6 
+    }
+    .nav-links-wrapper {
+    @apply flex flex-row overflow-auto w-full 
+    }
+    .nav-links {
+    @apply h-12 flex items-center mx-4 md:my-2 md:mx-5 whitespace-nowrap duration-200 
+    }
+    .nav-anchor {
+    @apply text-[#999999] hover:text-white duration-150
+    }
+    .bottom-nav-container {
+    @apply h-48 bottom-0  bg-gradient-to-t from-black w-full flex justify-center items-center fixed pt-8
+    }
+}
