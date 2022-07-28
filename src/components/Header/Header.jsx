@@ -2,6 +2,8 @@ import React from "react";
 import { navData } from "./navData";
 import logoMobile from "../../assets/mobile.png";
 
+import BottomNav from "./BottomNav";
+
 const Header = () => {
     return (
         <div className="header-container">
@@ -21,18 +23,7 @@ const Header = () => {
                     })}
                 </ul>
             </div>
-            <div className="bottom-nav-container">
-                <div className="flex flex-row">
-                    <ul classname="flex">
-                        <li className="flex">
-                            <a className="text-[.75rem]">Channels</a>
-                        </li>
-                        <li className="flex">
-                            <a className="text-[.75rem]">Browse</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <BottomNav />
         </div>
     );
 };
