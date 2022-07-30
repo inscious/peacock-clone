@@ -30,23 +30,19 @@
 
 ## :dart: About
 
-Describe your project
+This is fully responsive Peacock TV clone. The ui is very close to the original website. I'm almost certain Tailwind was used for the actual site itself being that most of its sizing values are exactly the same breakpoints.
 
 ## :sparkles: Features
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Fully responsive for any device;\
 
 ## :rocket: Technologies
 
 The following tools were used in this project:
 
--   [React](https://pt-br.reactjs.org/)
--   [Expo](https://expo.io/)
--   [Node.js](https://nodejs.org/en/)
--   [React Native](https://reactnative.dev/)
--   [TypeScript](https://www.typescriptlang.org/)
+-   [React](https://reactjs.org/)
+-   [TailwindCSS](https://tailwindcss.com/)
+-   [react-responsive-carousel](https://www.npmjs.com/package/react-responsive-carousel)
 
 ## :white_check_mark: Requirements
 
