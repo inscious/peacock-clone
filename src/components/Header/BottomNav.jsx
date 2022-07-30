@@ -4,7 +4,7 @@ const BottomNav = () => {
     return (
         <div className="bottom-nav-container lg:hidden">
             <div className="flex flex-row w-full justify-center">
-                <div className="flex items-center w-12 h-12 justify-center rounded-full overflow-hidden bg-[#222222] cursor-pointer">
+                <div className="flex items-center w-12 h-12 justify-center rounded-full backdrop-blur-md bg-[#101010]/50 cursor-pointer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"

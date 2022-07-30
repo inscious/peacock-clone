@@ -1,15 +1,15 @@
 import React from "react";
 import { navData } from "./navData";
-import logoMobile from "../../assets/mobile.png";
+import mobileLogo from "../../assets/mobile.png";
 import dsktpLogo from "../../assets/desktop.png";
 
 import BottomNav from "./BottomNav";
 
 const Header = () => {
     return (
-        <div className="header-container">
+        <nav className="header-container z-50">
             <div className="image-container-mobile">
-                <img src={logoMobile} className="mobile-logo" />
+                <img src={mobileLogo} className="mobile-logo" />
             </div>
             <div className="image-container-desktop">
                 <img
@@ -38,10 +38,12 @@ const Header = () => {
                         </a>
                     </span>
                     <span className="text-black flex bg-gradient-to-r from-[#fab503] to-[#fe9001] rounded-full p-4 xl:px-6 justify-center items-center duration-200 cursor-pointer h-12">
-                        <a className="text-sm duration-200 xl:text-base">Browse</a>
+                        <a className="text-sm duration-200 xl:text-base">
+                            Browse
+                        </a>
                     </span>
                 </div>
-                <ul className="flex bg-[#222222] rounded-r-full pl-6">
+                <ul className="flex backdrop-blur-md bg-[#101010]/50 rounded-r-full pl-6 ">
                     {navData.map((data) => {
                         return (
                             <li className="flex items-center mx-2.5 xl:mx-[1.125rem]">
@@ -57,7 +59,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="hidden lg:flex absolute right-8 xl:right-16 duration-200">
-                <div className="flex items-center w-12 h-12 justify-center rounded-full overflow-hidden bg-[#222222] cursor-pointer mx-2">
+                <div className="flex items-center w-12 h-12 justify-center rounded-full overflow-hidden backdrop-blur-md bg-[#101010]/50 cursor-pointer mx-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"
@@ -78,7 +80,7 @@ const Header = () => {
                 </div>
             </div>
             <BottomNav />
-        </div>
+        </nav>
     );
 };
 
