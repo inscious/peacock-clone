@@ -30,7 +30,7 @@
 
 ## :dart: About
 
-This is fully responsive Peacock TV clone. The ui is very close to the original website. I'm almost certain Tailwind was used for the actual site itself being that most of its sizing values are exactly the same breakpoints.
+This is fully responsive Peacock TV clone. The ui is very close to the original website. I'm almost certain Tailwind was used for the actual site itself being that most of its sizing values and breakpoints are almost exactly the same.
 
 ## :sparkles: Features
 
