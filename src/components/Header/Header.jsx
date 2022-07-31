@@ -8,6 +8,7 @@ import BottomNav from "./BottomNav";
 const Header = () => {
     return (
         <nav className="header-container z-50">
+            {/* LOGO */}
             <div className="image-container-mobile">
                 <img src={mobileLogo} className="mobile-logo" />
             </div>
@@ -17,6 +18,7 @@ const Header = () => {
                     className="hidden lg:flex h-12 absolute left-8 top-9 xl:left-16 duration-200"
                 />
             </div>
+            {/* MOBILE NAV  LINKS */}
             <div className="flex">
                 <ul className="nav-links-wrapper">
                     {navData.map((data) => {
@@ -30,6 +32,7 @@ const Header = () => {
                     })}
                 </ul>
             </div>
+            {/* DESKTOP NAV LINKS */}
             <div className="hidden lg:flex w-full justify-center">
                 <div className="bg-[#222222] rounded-full h-12 flex justify-center items-center -mr-6 z-10">
                     <span className="text-white flex justify-center items-center py-4 pl-4 mr-1 xl:mr-0 xl:px-6 duration-200 cursor-pointer">
@@ -58,6 +61,7 @@ const Header = () => {
                     })}
                 </ul>
             </div>
+            {/* DESKTOP SEARCH & AVATAR */}
             <div className="hidden lg:flex absolute right-8 xl:right-16 duration-200">
                 <div className="flex items-center w-12 h-12 justify-center rounded-full overflow-hidden backdrop-blur-md bg-[#101010]/50 cursor-pointer mx-2">
                     <svg

@@ -19,6 +19,10 @@
     font-family: "peacock-sans";
 }
 
+body {
+    background-color: #000;
+}
+
 @layer components {
     .header-container {
         @apply h-[8.5rem] flex flex-col justify-end md:h-[9.25rem] duration-200 fixed w-full lg:h-28 lg:flex-row lg:justify-evenly lg:items-center lg:bg-gradient-to-b lg:from-black bg-black lg:bg-transparent top-0;

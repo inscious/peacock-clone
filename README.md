@@ -34,7 +34,7 @@ This is fully responsive Peacock TV clone. The ui is very close to the original 
 
 ## :sparkles: Features
 
-:heavy_check_mark: Fully responsive for any device;\
+:heavy_check_mark: Fully responsive for any device;
 
 ## :rocket: Technologies
 
