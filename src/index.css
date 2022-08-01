@@ -43,6 +43,92 @@ body {
         @apply text-[#999999] hover:text-white duration-150;
     }
     .bottom-nav-container {
-        @apply h-48 bottom-0  bg-gradient-to-t from-black w-full flex justify-center items-center fixed pt-8;
+        @apply h-48 -bottom-5 md:bottom-0  bg-gradient-to-t from-black w-full flex justify-center items-center fixed pt-8;
+    }
+}
+
+.swiper-pagination {
+    position: relative !important;
+    top: -13.5vw !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 2rem !important;
+    z-index: 1 !important;
+}
+
+.swiper-pagination-bullet {
+    border-radius: 9999px !important;
+    width: 4px !important;
+    height: 4px !important;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(255, 255, 255, 0.5) !important;
+    transition-duration: 300ms;
+    opacity: 1 !important;
+    margin: 0 0.5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #facc15 !important;
+    width: 16px !important;
+    height: 16px !important;
+    transition-duration: 300ms;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination-bullet {
+        border-radius: 9999px !important;
+        width: 8px !important;
+        height: 8px !important;
+        text-align: center;
+        line-height: 30px;
+        background: rgba(255, 255, 255, 0.5) !important;
+        transition-duration: 300ms;
+        opacity: 1 !important;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #facc15 !important;
+        width: 32px !important;
+        height: 32px !important;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .swiper-pagination {
+        top: -13vw !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 2rem !important;
+        z-index: 1 !important;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media (min-width: 1024px) {
+    .swiper-pagination {
+        top: -10vw !important;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media (min-width: 1280px) {
+    .swiper-pagination {
+        top: -15vw !important;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media (min-width: 1536px) {
+    .swiper-pagination {
+        top: -17vw !important;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
