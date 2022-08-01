@@ -34,15 +34,17 @@ This is fully responsive Peacock TV clone. The ui is very close to the original 
 
 ## :sparkles: Features
 
-:heavy_check_mark: Fully responsive for any device;
+:heavy_check_mark: Fully responsive to any device
 
 ## :rocket: Technologies
 
 The following tools were used in this project:
 
--   [React](https://reactjs.org/)
--   [TailwindCSS](https://tailwindcss.com/)
--   [react-responsive-carousel](https://www.npmjs.com/package/react-responsive-carousel)
+<p>
+    <a href="https://reactjs.org/" target="_blank">React</a>
+    <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
+    <a href="https://swiperjs.com/" target="_blank">SwiperJS</a>
+</p>
 
 ## :white_check_mark: Requirements
 
