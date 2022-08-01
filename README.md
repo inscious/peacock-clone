@@ -40,11 +40,9 @@ This is fully responsive Peacock TV clone. The ui is very close to the original 
 
 The following tools were used in this project:
 
-<p>
-    <a href="https://reactjs.org/" target="_blank">React</a>
-    <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
-    <a href="https://swiperjs.com/" target="_blank">SwiperJS</a>
-</p>
+-   [React](https://reactjs.org/)
+-   [TailwindCSS](https://tailwindcss.com/)
+-   [SwiperJS](https://swiperjs.com/)
 
 ## :white_check_mark: Requirements
 
