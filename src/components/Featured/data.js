@@ -1,11 +1,12 @@
 const featuredImages = [
     {
-        title: "WWE Summer Slam",
+        title: "Brooklyn Nine-Nine",
         image: "https://www.sky.at/static/img/filmhighlights/sky_22-03_brooklyn-nine-nine-s5.jpg?impolicy=bp04_teaserdata_image_16_9",
         titleImage:
             "https://imageservice.disco.peacocktv.com/uuid/caad458e-58a3-3490-82b6-3632c339530a/TITLE_TREATMENT/708/2500?language=eng&territory=US",
         watch: "Watch S7 E1",
-        genre: "Wrestling",
+        genre: "Comedy",
+        seasons: "7 Seasons",
     },
     {
         title: "The Resort",
@@ -14,6 +15,7 @@ const featuredImages = [
             "https://imageservice.disco.peacocktv.com/uuid/1e9baed1-661a-3d3b-8737-53d343e2fb2e/TITLE_TREATMENT/563/224?language=eng&territory=US&proposition=NBCUOTT",
         watch: "Watch S1 E1",
         genre: "Comedy-Drama",
+        seasons: "1 Season",
     },
     {
         title: "Love Island",
@@ -22,6 +24,7 @@ const featuredImages = [
             "https://imageservice.disco.peacocktv.com/pcms/686f5592-091b-11ed-b44a-5f5f39a4de12/AGG_SOURCE/563/224?territory=US&proposition=NBCUOTT&language=eng",
         watch: "Watch S4 E11",
         genre: "Reality",
+        seasons: "1 Season",
     },
     {
         title: "Secrets of Playboy",
@@ -30,6 +33,7 @@ const featuredImages = [
             "https://imageservice.disco.peacocktv.com/uuid/340bb79e-4c9f-3b9d-9366-506d9a77d58d/TITLE_TREATMENT/563/224?language=eng&territory=US&proposition=NBCUOTT",
         watch: "Watch S1 E1",
         genre: "Documentary",
+        seasons: "1 Season",
     },
     {
         title: "Southern Charm",
@@ -38,6 +42,7 @@ const featuredImages = [
             "https://imageservice.disco.peacocktv.com/uuid/b2c9f217-e5a5-33e7-b9c9-1f4d245e2867/TITLE_TREATMENT/563/224?language=eng&territory=US&proposition=NBCUOTT",
         watch: "Watch S1 E10",
         genre: "Reality",
+        seasons: "8 Seasons",
     },
     {
         title: "The Real House Wives of Beverly Hills",
@@ -46,6 +51,7 @@ const featuredImages = [
             "https://imageservice.disco.peacocktv.com/uuid/10eecb3c-a753-3be9-8848-093b748818d6/TITLE_TREATMENT/563/224?language=eng&territory=US&proposition=NBCUOTT",
         watch: "Watch S12 E1",
         genre: "Reality",
+        seasons: "12 Seasons",
     },
 ];
 

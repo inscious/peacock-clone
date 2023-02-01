@@ -1,12 +1,10 @@
 import React, { useRef } from "react";
 
-
 // swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./swiper.styles.scss";
 import NavigationArrows from "./NavigationArrows";
 // import MockPagination from "./MockPagination";
 import FeaturedSlide from "./FeaturedSlide";
@@ -30,7 +28,7 @@ const Featured = () => {
                 loop={true}
                 autoplay={{
                     delay: 4800,
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
                 }}
                 onInit={(swiper) => {
                     swiper.params.navigation.prevEl = swiperNavPrevRef.current;

@@ -30,7 +30,9 @@
 
 ## :dart: About
 
-This is fully responsive Peacock TV clone. The ui is very close to the original website. I'm almost certain Tailwind was used for the actual site itself being that most of its sizing values and breakpoints are almost exactly the same.
+<!-- This is fully responsive Peacock TV clone. The ui is very close to the original website. I'm almost certain Tailwind was used for the actual site itself being that most of its sizing values and breakpoints are almost exactly the same. -->
+
+A static PeacockTV clone created with React, providing a visually similar interface without any functionalities. The platform is designed using React components to replicate the appearance of the PeacockTV platform, but does not include any functionalities such as streaming videos or searching for content. It serves as a visually appealing design reference for users.
 
 ## :sparkles: Features
 

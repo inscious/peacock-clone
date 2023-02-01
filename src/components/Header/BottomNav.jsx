@@ -32,8 +32,12 @@ const BottomNav = () => {
                         </a>
                     </span>
                 </div>
-                <div className="flex items-end w-12 h-12 rounded-full bg-[#222222] cursor-pointer duration-200 hover:bg-gradient-to-r hover:from-[#eba23f] hover:to-[#f2bf75]">
-                    <img src="https://imageservice.disco.peacocktv.com/pcms/7fdf0012-3001-434a-be15-9ea2d3c32275/AGG_SOURCE/400?territory=US&proposition=NBCUOTT&language=eng" />
+                <div className="flex items-end w-12 h-12 rounded-full duration-200 group bg-[#222]">
+                    <img
+                        className="z-10"
+                        src="https://imageservice.disco.peacocktv.com/pcms/7fdf0012-3001-434a-be15-9ea2d3c32275/AGG_SOURCE/400?territory=US&proposition=NBCUOTT&language=eng"
+                    />
+                    <span className="cursor-pointer w-12 h-12 absolute rounded-full bg-gradient-to-r from-[#eba23f] to-[#f2bf75] opacity-0 group-hover:opacity-100 duration-200 " />
                 </div>
             </div>
         </div>

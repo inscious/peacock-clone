@@ -10,13 +10,17 @@ const Header = () => {
         <nav className="header-container z-50">
             {/* LOGO */}
             <div className="image-container-mobile">
-                <img src={mobileLogo} className="mobile-logo" />
+                <a href="/">
+                    <img src={mobileLogo} className="mobile-logo" />
+                </a>
             </div>
             <div className="image-container-desktop">
-                <img
-                    src={dsktpLogo}
-                    className="hidden lg:flex h-12 absolute left-8 top-9 xl:left-16 duration-200"
-                />
+                <a href="/">
+                    <img
+                        src={dsktpLogo}
+                        className="absolute left-8 top-9 hidden h-12 duration-200 lg:flex xl:left-16"
+                    />
+                </a>
             </div>
             {/* MOBILE NAV  LINKS */}
             <div className="flex">
@@ -33,25 +37,25 @@ const Header = () => {
                 </ul>
             </div>
             {/* DESKTOP NAV LINKS */}
-            <div className="hidden lg:flex w-full justify-center">
-                <div className="bg-[#222222] rounded-full h-12 flex justify-center items-center -mr-6 z-10">
-                    <span className="text-white flex justify-center items-center py-4 pl-4 mr-1 xl:mr-0 xl:px-6 duration-200 cursor-pointer">
+            <div className="hidden w-full justify-center lg:flex">
+                <div className="z-10 -mr-6 flex h-12 items-center justify-center rounded-full bg-[#222222]">
+                    <span className="mr-1 flex cursor-pointer items-center justify-center py-4 pl-4 text-white duration-200 xl:mr-0 xl:px-6">
                         <a className="text-sm duration-200 hover:border-b-4 xl:text-base">
                             Channels
                         </a>
                     </span>
-                    <span className="text-black flex bg-gradient-to-r from-[#fab503] to-[#fe9001] rounded-full p-4 xl:px-6 justify-center items-center duration-200 cursor-pointer h-12">
+                    <span className="flex h-12 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#fab503] to-[#fe9001] p-4 text-black duration-200 xl:px-6">
                         <a className="text-sm duration-200 xl:text-base">
                             Browse
                         </a>
                     </span>
                 </div>
-                <ul className="flex backdrop-blur-md bg-[#101010]/50 rounded-r-full pl-6 ">
+                <ul className="flex rounded-r-full bg-[#101010]/50 pl-6 backdrop-blur-md ">
                     {navData.map((data) => {
                         return (
-                            <li className="flex items-center mx-2.5 xl:mx-[1.125rem]">
+                            <li className="mx-2.5 flex items-center xl:mx-[1.125rem]">
                                 <a
-                                    className="text-white text-sm opacity-60 hover:opacity-100 duration-200 xl:text-base"
+                                    className="text-sm text-white opacity-60 duration-200 hover:opacity-100 xl:text-base"
                                     href={data.url}
                                 >
                                     {data.title}
@@ -62,8 +66,8 @@ const Header = () => {
                 </ul>
             </div>
             {/* DESKTOP SEARCH & AVATAR */}
-            <div className="hidden lg:flex absolute right-8 xl:right-16 duration-200">
-                <div className="flex items-center w-12 h-12 justify-center rounded-full overflow-hidden backdrop-blur-md bg-[#101010]/50 cursor-pointer mx-2">
+            <div className="absolute right-8 hidden duration-200 lg:flex xl:right-16">
+                <div className="mx-2 flex h-12 w-12 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[#101010]/50 backdrop-blur-md">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"
@@ -79,8 +83,12 @@ const Header = () => {
                         />
                     </svg>
                 </div>
-                <div className="flex items-end w-12 h-12 rounded-full bg-[#222222] cursor-pointer duration-200 hover:bg-gradient-to-r hover:from-[#eba23f] hover:to-[#f2bf75]">
-                    <img src="https://imageservice.disco.peacocktv.com/pcms/7fdf0012-3001-434a-be15-9ea2d3c32275/AGG_SOURCE/400?territory=US&proposition=NBCUOTT&language=eng" />
+                <div className="group flex h-12 w-12 items-end rounded-full bg-[#222] duration-200">
+                    <img
+                        className="z-10"
+                        src="https://imageservice.disco.peacocktv.com/pcms/7fdf0012-3001-434a-be15-9ea2d3c32275/AGG_SOURCE/400?territory=US&proposition=NBCUOTT&language=eng"
+                    />
+                    <span className="absolute h-12 w-12 cursor-pointer rounded-full bg-gradient-to-r from-[#eba23f] to-[#f2bf75] opacity-0 duration-200 group-hover:opacity-100 " />
                 </div>
             </div>
             <BottomNav />
