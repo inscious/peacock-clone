@@ -25,9 +25,9 @@ const Header = () => {
             {/* MOBILE NAV  LINKS */}
             <div className="flex">
                 <ul className="nav-links-wrapper">
-                    {navData.map((data) => {
+                    {navData.map((data, index) => {
                         return (
-                            <li className="nav-links">
+                            <li className="nav-links" key={index}>
                                 <a className="nav-anchor" href={data.url}>
                                     {data.title}
                                 </a>
@@ -51,9 +51,12 @@ const Header = () => {
                     </span>
                 </div>
                 <ul className="flex rounded-r-full bg-[#101010]/50 pl-6 backdrop-blur-md ">
-                    {navData.map((data) => {
+                    {navData.map((data, index) => {
                         return (
-                            <li className="mx-2.5 flex items-center xl:mx-[1.125rem]">
+                            <li
+                                className="mx-2.5 flex items-center xl:mx-[1.125rem]"
+                                key={index}
+                            >
                                 <a
                                     className="text-sm text-white opacity-60 duration-200 hover:opacity-100 xl:text-base"
                                     href={data.url}
@@ -83,12 +86,12 @@ const Header = () => {
                         />
                     </svg>
                 </div>
-                <div className="group flex h-12 w-12 items-end rounded-full bg-[#222] duration-200">
+                <div className="group flex h-12 w-12 items-end rounded-full bg-[#222] duration-200 hover:cursor-pointer">
                     <img
                         className="z-10"
                         src="https://imageservice.disco.peacocktv.com/pcms/7fdf0012-3001-434a-be15-9ea2d3c32275/AGG_SOURCE/400?territory=US&proposition=NBCUOTT&language=eng"
                     />
-                    <span className="absolute h-12 w-12 cursor-pointer rounded-full bg-gradient-to-r from-[#eba23f] to-[#f2bf75] opacity-0 duration-200 group-hover:opacity-100 " />
+                    <span className="absolute h-12 w-12 cursor-pointer rounded-full bg-gradient-to-r from-[#eba23f] to-[#f2bf75] opacity-0 duration-200 group-hover:opacity-100" />
                 </div>
             </div>
             <BottomNav />

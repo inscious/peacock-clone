@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { CardsContainer } from "./styles";
+import { CardsContainer, SliderContainer } from "./styles";
 
 // swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,11 +12,29 @@ import peacockPicks from "../../assets/cardContent/peacockPicks";
 const CardContent = () => {
     return (
         <CardsContainer>
-            <Swiper modules={Navigation} slidesPerView={3} spaceBetween={30}>
-                <div className="w-full">
-                    <SwiperSlide className=""></SwiperSlide>
-                </div>
-            </Swiper>
+            <section className="contentSlider">
+                <h3 className="z-50 text-white">My Stuff</h3>
+                <SliderContainer>
+                    <Swiper
+                        modules={Navigation}
+                        slidesPerView={4}
+                        spaceBetween={15}
+                    >
+                        {peacockPicks.map((data, index) => {
+                            return (
+                                <SwiperSlide>
+                                    <div
+                                        key={index}
+                                        className="contentSlider__content"
+                                    >
+                                        <img src={data.img} className="" />
+                                    </div>
+                                </SwiperSlide>
+                            );
+                        })}
+                    </Swiper>
+                </SliderContainer>
+            </section>
         </CardsContainer>
     );
 };

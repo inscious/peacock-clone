@@ -37,9 +37,12 @@ const Featured = () => {
                     swiper.navigation.update();
                 }}
             >
-                {featuredImages.map((data) => {
+                {featuredImages.map((data, index) => {
                     return (
-                        <SwiperSlide className="bg-gradient-to-t from-black">
+                        <SwiperSlide
+                            className="bg-gradient-to-t from-black"
+                            key={index}
+                        >
                             <FeaturedSlide data={data} />
                         </SwiperSlide>
                     );
