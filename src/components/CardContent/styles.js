@@ -1,32 +1,30 @@
 import styled, { keyframes } from "styled-components";
 
 export const CardsContainer = styled.section`
-    margin-top: -10vh;
+    /* margin-top: -20vh; */
 
     display: flex;
     flex-direction: column;
     gap: 40px;
 
     width: 100%;
-    padding: 0 32px;
-
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
+    padding: 0 64px;
 
     .contentSlider {
         display: flex;
         flex-direction: column;
-
+        /* position: relative; */
+        /* top: -20rem; */
         h3 {
-            width: fit-content;
-            padding: 0 16px;
+            font-size: 1.5rem;
+            font-weight: lighter;
         }
 
         .contentSlider__slider {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 8px;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* gap: 8px; */
 
             ${"" /* reset swiper default margin top */}
             margin:0;
@@ -37,7 +35,7 @@ export const CardsContainer = styled.section`
                 height: fit-content;
             }
 
-            .swiper-button-next:after,
+            /* .swiper-button-next:after,
             .swiper-button-prev:after {
                 color: #f0f0f000;
                 font-size: 3em;
@@ -47,7 +45,7 @@ export const CardsContainer = styled.section`
             .swiper-button-next:hover::after,
             .swiper-button-prev:hover::after {
                 color: #f0f0f0;
-            }
+            } */
 
             .swiper-wrapper {
                 min-height: fit-content;
@@ -62,15 +60,15 @@ export const CardsContainer = styled.section`
                 width: 100%;
                 height: 100%;
 
-                a {
+                /* a {
                     display: block;
                     width: fit-content;
                     height: fit-content;
-                }
+                } */
 
                 img {
                     object-fit: cover;
-                    border-radius: 6px;
+                    border-radius: 10px;
 
                     box-shadow: 0px 7px 14px 0px #000000;
 

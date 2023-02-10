@@ -10,7 +10,9 @@ function App() {
             <Header />
             <main className="mt-[136px] duration-200 md:mt-[148px] lg:mt-0">
                 <Featured />
-                <CardContent />
+                <div className="">
+                    <CardContent />
+                </div>
                 {/* <CardContent /> */}
             </main>
             <Footer />
