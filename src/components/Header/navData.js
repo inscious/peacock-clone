@@ -1,9 +1,9 @@
 export const navData = [
-    { title: "Featured", url: "/home" },
-    { title: "Movies", url: "/movies" },
-    { title: "TV Shows", url: "/tv" },
-    { title: "Sports", url: "/sports" },
-    { title: "WWE", url: "/wwe" },
-    { title: "News", url: "/news" },
-    { title: "My Stuff", url: "/my-stuff" },
+    { title: "Featured", url: "/" },
+    { title: "Movies", url: "/" },
+    { title: "TV Shows", url: "/" },
+    { title: "Sports", url: "/" },
+    { title: "WWE", url: "/" },
+    { title: "News", url: "/" },
+    { title: "My Stuff", url: "/" },
 ];
