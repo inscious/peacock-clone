@@ -23,6 +23,8 @@ body {
     background-color: #000;
 }
 
+
+/* HEADER CSS */
 @layer components {
     .header-container {
         @apply fixed top-0 flex h-[8.5rem] w-full flex-col justify-end bg-black duration-200 md:h-[9.25rem] lg:h-28 lg:flex-row lg:items-center lg:justify-evenly lg:bg-transparent lg:bg-gradient-to-b lg:from-black;
@@ -47,6 +49,8 @@ body {
     }
 }
 
+
+/* Swiper Pagination CSS */
 .swiper-pagination {
     position: relative !important;
     top: -13.5vw !important;
@@ -112,7 +116,7 @@ body {
 @media (min-width: 1024px) {
     .swiper-pagination {
         top: -10vw !important;
-        transition-duration: 300ms;
+        transition-duration: 150ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
@@ -120,7 +124,7 @@ body {
 @media (min-width: 1280px) {
     .swiper-pagination {
         top: -15vw !important;
-        transition-duration: 300ms;
+        transition-duration: 150ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
@@ -128,7 +132,7 @@ body {
 @media (min-width: 1536px) {
     .swiper-pagination {
         top: -17vw !important;
-        transition-duration: 300ms;
+        transition-duration: 150ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }

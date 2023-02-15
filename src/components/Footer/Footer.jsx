@@ -3,7 +3,7 @@ import { copyright, footerData } from "./footerData";
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-700">
+        <footer className="bg-slate-00">
             <div className="bg-slate-00  mx-auto grid w-full max-w-[100rem] grid-cols-1 pb-8 pt-14 lg:grid-cols-3">
                 <div className=" items-s bg-red-00 bg-stone-00 justify-center lg:col-span-2">
                     <ul className="bg-violet-00 flex w-full flex-row flex-wrap items-center justify-center py-2 px-10 duration-150 lg:justify-start">
@@ -111,7 +111,7 @@ const Footer = () => {
                     </ul>
                     <ul></ul>
                 </div>
-                <div className="bg-violet-00 bg-rose-00 col-span-1 mx-auto my-2 mb-10 flex w-full items-center justify-center px-10 pb-5 lg:col-span-3 lg:justify-start">
+                <div className="bg-violet-00 bg-rose-00 col-span-1 mx-auto my-2 mb-10 flex w-full items-center justify-center px-10 pb- lg:col-span-3 lg:justify-start">
                     <p className="text-xs text-[#777777] duration-150 lg:text-sm">
                         {copyright}
                     </p>

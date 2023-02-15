@@ -10,7 +10,7 @@ import NavigationArrows from "./NavigationArrows";
 import FeaturedSlide from "./FeaturedSlide";
 
 // mock data
-import featuredImages from "./data";
+import { featuredImages } from "./data";
 
 const Featured = () => {
     const swiperNavPrevRef = useRef(null);

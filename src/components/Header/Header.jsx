@@ -70,7 +70,7 @@ const Header = () => {
             </div>
             {/* DESKTOP SEARCH & AVATAR */}
             <div className="absolute right-8 hidden duration-200 lg:flex xl:right-16">
-                <div className="mx-2 flex h-12 w-12 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[#101010]/50 backdrop-blur-md">
+                <div className="mx-2 flex h-12 w-12 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[#101010]/50 backdrop-blur-md duration-100 hover:bg-[#212121]">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"

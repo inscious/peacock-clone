@@ -13,8 +13,6 @@ export const CardsContainer = styled.section`
     .contentSlider {
         display: flex;
         flex-direction: column;
-        /* position: relative; */
-        /* top: -20rem; */
         h3 {
             font-size: 1.5rem;
             font-weight: lighter;
