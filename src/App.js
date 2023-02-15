@@ -14,7 +14,7 @@ function App() {
                 <Featured />
                 <div className="relative -top-16 duration-150 md:-top-28 xl:-top-48 2xl:-top-72">
                     <CardContent />
-                    <CardContent />
+                    {/* <CardContent /> */}
                 </div>
             </main>
             <Footer />

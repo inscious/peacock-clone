@@ -24,6 +24,13 @@ const myStuff = [
 
 const peacockPicks = [
     {
+        title: "Yellowstone",
+        genre: "Drama",
+        seasons: "4 Seasons",
+        tomato: "84%",
+        img: "https://imageservice.disco.peacocktv.com/uuid/51aab181-4250-3334-8c75-fe55da453fe9/TITLE_ART_16_9/400?language=eng&territory=US&proposition=NBCUOTT&version=781cc818-cbc1-317f-a786-1e908dd9b491&output-format=webp",
+    },
+    {
         title: "The Traitors",
         genre: "Competition",
         seasons: "1 Season",
@@ -64,6 +71,60 @@ const peacockPicks = [
         seasons: "8 Seasons",
         tomato: "91%",
         img: "https://imageservice.disco.peacocktv.com/uuid/0bfffeb2-cda9-36cf-a442-a59ada372ce1/TITLE_ART_16_9/400?language=eng&territory=US&proposition=NBCUOTT&version=aeb89e98-719e-30b5-8a94-f3e11ac1fd30",
+    },
+];
+
+const forYou = [
+    {
+        title: "The Office",
+        genre: "Comedy",
+        seasons: "9 Seasons",
+        tomato: "81%",
+        img: "https://imageservice.disco.peacocktv.com/pcms/7da0ae1a-5904-11ec-8988-d33b4336515c/AGG_SOURCE/400?territory=US&proposition=NBCUOTT&language=eng",
+    },
+    {
+        title: "Parks and Recreation",
+        genre: "Comedy",
+        seasons: "7 Seasons",
+        tomato: "93%",
+        img: "https://imageservice.disco.peacocktv.com/uuid/1df4e4cf-7617-3117-9e2a-62ffbf833d5c/TITLE_ART_16_9/400?language=eng&territory=US&proposition=NBCUOTT&version=40ee2f4a-1871-3a3d-95c4-38b95b40a494",
+    },
+    {
+        title: "Step Brothers",
+        genre: "Comedy",
+        seasons: "",
+        released: "2008",
+        tomato: "55%",
+        img: "https://imageservice.disco.peacocktv.com/uuid/a9ab19b6-2fcd-361f-9a89-c336a6cbc2f1/TITLE_ART_16_9/400?language=eng&territory=US&proposition=NBCUOTT&version=82487a19-a7ad-3935-819c-3566cf4d1666",
+    },
+    {
+        title: "Violent Night",
+        genre: "Action",
+        seasons: "",
+        released: "2022",
+        tomato: "73%",
+        img: "https://imageservice.disco.peacocktv.com/pcms/6b000216-8c6a-11ed-b760-4740678a9e22/LAND_16_9/400?territory=US&proposition=NBCUOTT&language=eng",
+    },
+    {
+        title: "Lucy",
+        genre: "Action",
+        seasons: "",
+        tomato: "66%",
+        img: "https://imageservice.disco.peacocktv.com/uuid/8bb629c4-828b-34f4-b608-207d7b1ab062/TITLE_ART_16_9/400?language=eng&territory=US&proposition=NBCUOTT&version=589378f2-619a-3bd3-ae65-d694194442b1",
+    },
+    {
+        title: "That 70's Show",
+        genre: "Comedy",
+        seasons: "8 Seasons",
+        tomato: "91%",
+        img: "https://imageservice.disco.peacocktv.com/uuid/0bfffeb2-cda9-36cf-a442-a59ada372ce1/TITLE_ART_16_9/400?language=eng&territory=US&proposition=NBCUOTT&version=aeb89e98-719e-30b5-8a94-f3e11ac1fd30",
+    },
+    {
+        title: "Yellowstone",
+        genre: "Drama",
+        seasons: "4 Seasons",
+        tomato: "84%",
+        img: "https://imageservice.disco.peacocktv.com/uuid/51aab181-4250-3334-8c75-fe55da453fe9/TITLE_ART_16_9/400?language=eng&territory=US&proposition=NBCUOTT&version=781cc818-cbc1-317f-a786-1e908dd9b491&output-format=webp",
     },
 ];
 
@@ -112,4 +173,4 @@ const justAdded = [
     },
 ];
 
-export { peacockPicks, myStuff, justAdded };
+export { peacockPicks, myStuff, justAdded, forYou };

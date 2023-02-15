@@ -9,8 +9,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import {
-    peacockPicks,
     myStuff,
+    peacockPicks,
+    forYou,
     justAdded,
 } from "../../assets/cardContent/cardsData";
 
@@ -58,6 +59,26 @@ const CardContent = () => {
                             spaceBetween={15}
                         >
                             {peacockPicks.map((data, index) => {
+                                return (
+                                    <SwiperSlide>
+                                        <Card data={data} index={index} />
+                                    </SwiperSlide>
+                                );
+                            })}
+                        </Swiper>
+                    </>
+                    <>
+                        <div className="bg-slate-00 mt-5 px-5 duration-150 md:px-8 xl:px-16">
+                            <h3 className="mb- z-30 whitespace-nowrap text-white duration-150 lg:text-xl">
+                                Peacock Picks
+                            </h3>
+                        </div>
+                        <Swiper
+                            modules={Navigation}
+                            slidesPerView={4.5}
+                            spaceBetween={15}
+                        >
+                            {forYou.map((data, index) => {
                                 return (
                                     <SwiperSlide>
                                         <Card data={data} index={index} />
