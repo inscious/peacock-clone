@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./components/Header";
 import Featured from "./components/Featured";
 import CardContent from "./components/CardContent";
 import Footer from "./components/Footer";
-
-import { myStuff, featuredPicks } from "./assets/cardContent/cardsData";
 
 function App() {
     return (
@@ -14,7 +12,6 @@ function App() {
                 <Featured />
                 <div className="relative -top-16 duration-150 md:-top-28 xl:-top-48 2xl:-top-72">
                     <CardContent />
-                    {/* <CardContent /> */}
                 </div>
             </main>
             <Footer />

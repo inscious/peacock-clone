@@ -39,8 +39,8 @@ const CardContent = () => {
                         >
                             {myStuff.map((data, index) => {
                                 return (
-                                    <SwiperSlide>
-                                        <Card data={data} index={index} />
+                                    <SwiperSlide key={index}>
+                                        <Card data={data} />
                                     </SwiperSlide>
                                 );
                             })}
@@ -60,8 +60,8 @@ const CardContent = () => {
                         >
                             {peacockPicks.map((data, index) => {
                                 return (
-                                    <SwiperSlide>
-                                        <Card data={data} index={index} />
+                                    <SwiperSlide key={index}>
+                                        <Card data={data} />
                                     </SwiperSlide>
                                 );
                             })}
@@ -80,8 +80,8 @@ const CardContent = () => {
                         >
                             {forYou.map((data, index) => {
                                 return (
-                                    <SwiperSlide>
-                                        <Card data={data} index={index} />
+                                    <SwiperSlide key={index}>
+                                        <Card data={data} />
                                     </SwiperSlide>
                                 );
                             })}
@@ -101,8 +101,8 @@ const CardContent = () => {
                         >
                             {justAdded.map((data, index) => {
                                 return (
-                                    <SwiperSlide>
-                                        <Card data={data} index={index} />
+                                    <SwiperSlide key={index}>
+                                        <Card data={data} />
                                     </SwiperSlide>
                                 );
                             })}
