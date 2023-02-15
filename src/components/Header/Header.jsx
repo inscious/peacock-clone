@@ -11,12 +11,17 @@ const Header = () => {
             {/* LOGO */}
             <div className="image-container-mobile">
                 <a href="/">
-                    <img src={mobileLogo} className="mobile-logo" />
+                    <img
+                        alt="Peacock Logo"
+                        src={mobileLogo}
+                        className="mobile-logo"
+                    />
                 </a>
             </div>
             <div className="image-container-desktop">
                 <a href="/">
                     <img
+                        alt="Peacock Logo"
                         src={dsktpLogo}
                         className="absolute left-8 top-9 hidden h-12 duration-200 lg:flex xl:left-16"
                     />
@@ -40,14 +45,14 @@ const Header = () => {
             <div className="hidden w-full justify-center lg:flex">
                 <div className="z-10 -mr-6 flex h-12 items-center justify-center rounded-full bg-[#222222]">
                     <span className="mr-1 flex cursor-pointer items-center justify-center py-4 pl-4 text-white duration-200 xl:mr-0 xl:px-6">
-                        <a className="text-sm duration-200 hover:border-b-4 xl:text-base">
+                        <p className="text-sm duration-200 hover:border-b-4 xl:text-base">
                             Channels
-                        </a>
+                        </p>
                     </span>
                     <span className="flex h-12 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#fab503] to-[#fe9001] p-4 text-black duration-200 xl:px-6">
-                        <a className="text-sm duration-200 xl:text-base">
+                        <p className="text-sm duration-200 xl:text-base">
                             Browse
-                        </a>
+                        </p>
                     </span>
                 </div>
                 <ul className="flex rounded-r-full bg-[#101010]/50 pl-6 backdrop-blur-md ">
@@ -88,6 +93,7 @@ const Header = () => {
                 </div>
                 <div className="group flex h-12 w-12 items-end rounded-full bg-[#222] duration-200 hover:cursor-pointer">
                     <img
+                        alt="avatar"
                         className="z-10"
                         src="https://imageservice.disco.peacocktv.com/pcms/7fdf0012-3001-434a-be15-9ea2d3c32275/AGG_SOURCE/400?territory=US&proposition=NBCUOTT&language=eng"
                     />

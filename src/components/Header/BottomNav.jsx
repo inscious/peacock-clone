@@ -3,8 +3,8 @@ import React from "react";
 const BottomNav = () => {
     return (
         <div className="bottom-nav-container lg:hidden">
-            <div className="flex flex-row w-full justify-center">
-                <div className="flex items-center w-12 h-12 justify-center rounded-full backdrop-blur-md bg-[#101010]/50 cursor-pointer">
+            <div className="flex w-full flex-row justify-center">
+                <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-[#101010]/50 backdrop-blur-md">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"
@@ -20,24 +20,25 @@ const BottomNav = () => {
                         />
                     </svg>
                 </div>
-                <div className="bg-[#222222] rounded-full h-12 flex justify-center items-center mx-4">
-                    <span className="text-white flex justify-center items-center py-3 px-3 md:px-5 duration-200 cursor-pointer ">
-                        <a className="text-xs md:text-base duration-200 hover:border-b-4">
+                <div className="mx-4 flex h-12 items-center justify-center rounded-full bg-[#222222]">
+                    <span className="flex cursor-pointer items-center justify-center py-3 px-3 text-white duration-200 md:px-5 ">
+                        <p className="text-xs duration-200 hover:border-b-4 md:text-base">
                             Channels
-                        </a>
+                        </p>
                     </span>
-                    <span className="text-black flex bg-gradient-to-r from-[#fab503] to-[#fe9001] rounded-full py-4 px-[18px] md:px-5 md:py-3 justify-center items-center duration-200 cursor-pointer">
-                        <a className="text-xs md:text-base duration-200">
+                    <span className="flex cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#fab503] to-[#fe9001] py-4 px-[18px] text-black duration-200 md:px-5 md:py-3">
+                        <p className="text-xs duration-200 md:text-base">
                             Browse
-                        </a>
+                        </p>
                     </span>
                 </div>
-                <div className="flex items-end w-12 h-12 rounded-full duration-200 group bg-[#222]">
+                <div className="group flex h-12 w-12 items-end rounded-full bg-[#222] duration-200">
                     <img
+                        alt="avatar"
                         className="z-10"
                         src="https://imageservice.disco.peacocktv.com/pcms/7fdf0012-3001-434a-be15-9ea2d3c32275/AGG_SOURCE/400?territory=US&proposition=NBCUOTT&language=eng"
                     />
-                    <span className="cursor-pointer w-12 h-12 absolute rounded-full bg-gradient-to-r from-[#eba23f] to-[#f2bf75] opacity-0 group-hover:opacity-100 duration-200 " />
+                    <span className="absolute h-12 w-12 cursor-pointer rounded-full bg-gradient-to-r from-[#eba23f] to-[#f2bf75] opacity-0 duration-200 group-hover:opacity-100 " />
                 </div>
             </div>
         </div>

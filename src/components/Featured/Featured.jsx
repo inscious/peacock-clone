@@ -6,7 +6,6 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import NavigationArrows from "./NavigationArrows";
-// import MockPagination from "./MockPagination";
 import FeaturedSlide from "./FeaturedSlide";
 
 // mock data

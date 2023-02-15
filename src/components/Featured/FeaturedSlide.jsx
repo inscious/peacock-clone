@@ -5,15 +5,20 @@ import { rotten } from "./data";
 const FeaturedSlide = ({ data }) => {
     return (
         <>
-            <div className="absolute bottom-[40%] left-5 z-20 flex h-1/3 w-1/2 flex-col duration-200 md:ml-16 md:w-1/2 lg:left-0 lg:h-1/3 md:bottom-[50%]">
-                <div className="m h-full bg-slate-00">
+            <div className="absolute bottom-[40%] left-5 z-20 flex h-1/3 w-1/2 flex-col duration-200 md:bottom-[50%] md:ml-16 md:w-1/2 lg:left-0 lg:h-1/3">
+                <div className="m bg-slate-00 h-full">
                     <img
+                        alt={data.title}
                         src={data.titleImage}
                         className="max-h-[80px] md:max-h-[150px]"
                     />
                     <span className="mt-2 flex items-center text-xs text-white duration-200 md:mt-5 md:text-base">
                         <span className="flex items-center">
-                            <img src={rotten} className="mr-2 h-4" />
+                            <img
+                                alt="Rotten Tomatoes"
+                                src={rotten}
+                                className="mr-2 h-4"
+                            />
                             <p className="mr-2">{data.score}</p>
                             <p className="mr-2">•</p>
                         </span>
