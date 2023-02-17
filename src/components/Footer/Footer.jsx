@@ -3,7 +3,7 @@ import { copyright, footerData } from "./footerData";
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-00">
+        <footer className="bg-slate-">
             <div className="bg-slate-00  mx-auto grid w-full max-w-[100rem] grid-cols-1 pb-8 pt-14 lg:grid-cols-3">
                 <div className=" items-s bg-red-00 bg-stone-00 justify-center lg:col-span-2">
                     <ul className="bg-violet-00 flex w-full flex-row flex-wrap items-center justify-center py-2 px-10 duration-150 lg:justify-start">
