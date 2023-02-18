@@ -1,8 +1,33 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    #main-wrapper {
+        position: relative;
+        z-index: 30;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-top: 2rem;
+        transition-duration: 100ms;
+    }
     .content-wrapper {
-        margin-bottom: 2.5rem;
+        transition-duration: 150ms;
+        margin-bottom: 2rem;
+        @media (min-width: 768px) {
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    section {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
     }
 
     .title-wrapper {
@@ -15,13 +40,11 @@ export const Container = styled.div`
             white-space: nowrap;
             color: white;
             transition-duration: 150ms;
-            /* margin-top: 2.5rem; */
         }
-
+        
         @media (min-width: 768px) {
             padding-left: 2.75rem;
             padding-right: 2.75rem;
-            margin-bottom: 0.75rem;
             transition-duration: 150ms;
         }
 
@@ -29,7 +52,7 @@ export const Container = styled.div`
             padding-left: 5rem;
             padding-right: 5rem;
             transition-duration: 150ms;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1rem;
 
             .section-title {
                 font-size: 1.25rem;
@@ -82,7 +105,6 @@ export const Container = styled.div`
 `;
 
 export const CardWrapper = styled.div`
-
     /* cursor: pointer;
     overflow: hidden;
     border-radius: 0.75rem;
@@ -141,8 +163,8 @@ export const CardWrapper = styled.div`
     }
 
     .bullet {
-        margin-left: .5rem;
-        margin-right: .5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         font-size: 0.5rem;
     }
 `;

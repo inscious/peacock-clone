@@ -16,23 +16,17 @@ import {
     onlyOnPeacock,
 } from "../../assets/cardContent/cardsData";
 
-// max-w-[94%] lg:max-w-[95%] xl:max-w-[91%]
-// lg:px-8 xl:px-16 px-6
-
 const CardContent = () => {
     return (
-        // <CardsContainer>
-        <div className="bg-purple-00/50 relative bottom-[] z-30 mx-auto flex h-full w-full pt-8 duration-100">
-            <section className="bg-red-00 flex w-full flex-col">
-                {/* <SliderContainer className="bg-slate-00"> */}
-                <Container>
+        <Container>
+            <div id="main-wrapper">
+                <section>
+
                     {/* My Stuff */}
                     <>
                         <div className="content-wrapper">
                             <div className="title-wrapper">
-                                <h3 className="section-title">
-                                    My Stuff
-                                </h3>
+                                <h3 className="section-title">My Stuff</h3>
                             </div>
                             <Swiper
                                 modules={Navigation}
@@ -54,9 +48,7 @@ const CardContent = () => {
                     <>
                         <div className="content-wrapper">
                             <div className="title-wrapper">
-                                <h3 className="section-title">
-                                    Peacock Picks
-                                </h3>
+                                <h3 className="section-title">Peacock Picks</h3>
                             </div>
                             <Swiper
                                 modules={Navigation}
@@ -78,9 +70,7 @@ const CardContent = () => {
                     <>
                         <div className="content-wrapper">
                             <div className="title-wrapper">
-                                <h3 className="section-title">
-                                    For You
-                                </h3>
+                                <h3 className="section-title">For You</h3>
                             </div>
                             <Swiper
                                 modules={Navigation}
@@ -102,9 +92,7 @@ const CardContent = () => {
                     <>
                         <div className="content-wrapper">
                             <div className="title-wrapper">
-                                <h3 className="section-title">
-                                    Just Added
-                                </h3>
+                                <h3 className="section-title">Just Added</h3>
                             </div>
                             <Swiper
                                 modules={Navigation}
@@ -146,11 +134,10 @@ const CardContent = () => {
                             </Swiper>
                         </div>
                     </>
-                </Container>
-                {/* </SliderContainer> */}
-            </section>
-        </div>
-        // </CardsContainer>
+
+                </section>
+            </div>
+        </Container>
     );
 };
 
